@@ -1,4 +1,4 @@
-package coreconf
+package envconf
 
 import "os"
 
