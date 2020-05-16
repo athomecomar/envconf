@@ -1,3 +1,3 @@
-module github.com/athcomecomar/envconf
+module github.com/athomecomar/envconf
 
 go 1.14
