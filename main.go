@@ -4,6 +4,7 @@ import "os"
 
 const (
 	Production  env = "production"
+	Staging     env = "staging"
 	Development env = "development"
 )
 
