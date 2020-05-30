@@ -27,9 +27,13 @@ func NotInDevelopment() bool {
 }
 
 func GetENV() env {
-	osEnv := os.Getenv("ENV")
-	if osEnv != "" {
-		return env(osEnv)
+	return env(Get("ENV", string(Development)))
+}
+
+func Get(key string, def string) string {
+	v := os.Getenv(key)
+	if v == "" {
+		v = def
 	}
-	return "development"
+	return v
 }
